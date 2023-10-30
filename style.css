@@ -68,10 +68,12 @@ header {
     /* background-image: linear-gradient(rgb(51, 51, 51, 0.4), rgb(51, 51, 51, 0.8)); */
 }
 
+
+
 .social-logos {
     position: absolute;
     left: 42%;
-    display: flex;
+    display: none;
     gap: 35px;
 }
 
@@ -81,7 +83,7 @@ header {
 
 h1 {
     color: whitesmoke;
-    font-size: 64px;
+    font-size: 48px;
 }
 
 h2 {
@@ -90,7 +92,7 @@ h2 {
 
 nav {
     font-size: 32px;
-    display: flex;
+    display: none;
     gap: 20px;
 }
 
@@ -112,7 +114,7 @@ img {
 }
 
 #leaf-pic {
-    height: 75px;
+    height: 45px;
 }
 
 /*landing page stuff*/
@@ -131,11 +133,12 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 300px;
-    width: 500px;
+    width: 200px;
+    height: auto;
+    font-size: 32px;
     border-radius: 10%;
     background-image: linear-gradient(rgb(51, 51, 51, 0.4), rgb(51, 51, 51, 0.8));
-    font-size: 64px;
+
 }
 
 #arrow-image {
@@ -144,6 +147,7 @@ img {
 
 .middle-landing {
     display: flex;
+    flex-flow: column;
     height: 100vh;
 }
 
@@ -151,7 +155,7 @@ img {
     background-image: linear-gradient(rgb(51, 51, 51, 0), rgb(51, 51, 51, 0.8)), url(./Images/victor-0NJ9urGXrIg-unsplash.jpeg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 100%;
 }
 
 .middle-right {
@@ -166,7 +170,7 @@ img {
     background-image: linear-gradient(rgb(51, 51, 51, 0.2), rgb(51, 51, 51, 0.8)), url(./Images/sereja-ris-T5MO6fmMd38-unsplash.jpeg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 100%;
 }
 
 #mission-paragraph {
@@ -174,6 +178,7 @@ img {
 }
 
 .bottom-landing {
+    height: 400px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -205,6 +210,7 @@ img {
 /*Footer stuff*/
 
 footer {
+    margin-top: auto;
     height: 65px;
     width: 100%;
     background-color: black;
@@ -220,6 +226,8 @@ footer {
 /*Gallery stuff*/
 
 .image-gallery {
+    margin-left: 3vw;
+    margin-right: 3vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -238,11 +246,65 @@ footer {
     object-fit: cover;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 770px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    #leaf-pic {
+        height: 75px;
+    }
+
+    .change-landing {
+        height: 300px;
+        width: 500px;
+        font-size: 64px;
+        
+    }
+
+    /* Projects */
+
     .image-gallery {
         flex-direction: row;
     }
+
+    .social-logos {
+        display: flex;
+    }
+
+    .middle-landing {
+        flex-flow: row;
+    }
+
+    .middle-left {
+        width: 50%;
+
+    }
+
+    .middle-right {
+        width: 50%;
+    }
+
+    
 }
+
+@media only screen and (min-width: 1100px) {
+    
+    nav {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    /*partners */
+
+
+    
+}
+
+
 
 /*Contact stuff*/
 
@@ -252,7 +314,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 100px);
-    gap: 100px;
+    gap: 50px;
 }
 
 .contact-item {
@@ -322,6 +384,33 @@ footer {
 .contact-submit:hover {
     transform: translateY(4px);
 }
+
+@media only screen and (max-width: 1100px) {
+    .contact-container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20vh;
+    }
+
+    #mission-paragraph {
+        font-size: 18px;
+    }
+
+    .partners-div {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partners-2:first-child {
+        order: 1;
+    }
+
+    
+    
+}
 /*partners stuff*/
 
 .partners-container {
@@ -329,7 +418,7 @@ footer {
     flex-flow: column;
     gap: 150px;
     margin-top: 100px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .partners-div {
