@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
     <script defer src="app.js"></script>
     <title>Projects</title>
 </head>
 <body>
-    <div class="big-container">
+    <div class="big-container black-bg">
         <header>
-            <div class="header-left">
-                <h1>GreenLeaf</h1>
-                <img src="./Images/leaf.svg" id="leaf-pic">
-    
-            </div>
+            <a href="index.html">
+                <div class="header-left">
+                    <h1>GreenLeaf</h1>
+                    <img src="./Images/leaf.svg" id="leaf-pic">
+        
+                </div>
+            </a>
             <div class="social-logos">
                 <img src="Images/icons8-facebook.svg" class="social-icon">
                 <img src="Images/icons8-instagram.svg" class="social-icon">
                 <img src="Images/icons8-tiktok.svg" class="social-icon">
             </div>
             <nav>
-                <h3><a href="projects.html">Projects</a></h3>
-                <h3>Contact</h3>
+                <p><a href="projects.html">Projects</a><p>
+                <p><a href="partners.html">Partners</a><p>
+                <p><a href="contact.html"><b>Contact</b></a><p>
             </nav>
         </header>
         <div class="contact-container">
-            <div class="contact-item contact-div">
+            <div class="contact-item name-div">
                 <p class="name-text">Name</p>
                 <input type="text" class="contact-input name-input">
             </div>
@@ -42,6 +46,16 @@
                 <p class="more-text">Anything else?</p>
                 <input type="text" class="contact-input more-input">
             </div>
+            <div class="contact-item newsletter-div">
+                <p>Sign up for our newsletter?</p>
+                <div class="checkbox-wrapper-2">
+                    <input type="checkbox" class="sc-gJwTLC ikxBAC">
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="submit-button-div">
             <button class="contact-submit">Submit</button>
         </div>
         
