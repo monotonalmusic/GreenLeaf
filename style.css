@@ -156,6 +156,9 @@ img {
     height: 200px;
 }
 
+#leaf-text {
+    color: #54C54E ;
+}
 .middle-landing {
     display: flex;
     flex-flow: column;
@@ -206,7 +209,7 @@ img {
     height: 75px;
     width: 300px;
     color: whitesmoke;
-    background-color: #374f2f;
+    background-color: black;
     outline: 0;
     border: 0;
     transition: transform 200ms, background 200ms;
@@ -273,6 +276,7 @@ footer {
 
 .contact-container {
     margin-top: 10vh;
+    margin-left: 100px;
     height: 40vh;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
