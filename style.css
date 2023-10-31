@@ -157,7 +157,7 @@ img {
 }
 
 #leaf-text {
-    color: #54C54E ;
+    color:#54C54E;
 }
 .middle-landing {
     display: flex;
@@ -192,14 +192,14 @@ img {
 }
 
 .bottom-landing {
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     gap: 25px;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 125px;
+    margin-bottom: 25px;
 }
 
 #get-in-touch {
@@ -382,7 +382,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 780px) {
     h1 {
         font-size: 64px;
     }
@@ -396,6 +396,11 @@ footer {
         width: 500px;
         font-size: 64px;
         
+    }
+
+    .bottom-landing {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .social-hamburger {
@@ -443,16 +448,18 @@ footer {
 @media only screen and (max-width: 1100px) {
     /*contact stuff*/
     .contact-container {
+        margin-left: 3vh;
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        margin-top: 20vh;
+        margin-top: 30vh;
+        margin-bottom: 10vh;
         
     }
 
     .submit-button-div {
-        translate: 80px;
+        transform: translate(75px, 50px) ;
     }
 
     .more-input {
@@ -469,6 +476,7 @@ footer {
         flex-flow: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
 
     .partners-2:first-child {
@@ -479,7 +487,12 @@ footer {
         display: flex;
         flex-flow: column;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
+    }
+
+    .partners-text {
+        width: 80vw;
+        text-align: start;
     }
 
 }
