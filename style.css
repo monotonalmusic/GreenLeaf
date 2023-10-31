@@ -56,13 +56,13 @@ body::-webkit-scrollbar {
 
 
 header {
-    padding-left: 20px;
+    padding-left:40px;
     padding-right: 20px;
     width: 100%;
     display: flex;
-    height: 100px;
+    height: 200px;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     color: whitesmoke;
     font-family: 'Advent Pro', sans-serif;
     /* background-image: linear-gradient(rgb(51, 51, 51, 0.4), rgb(51, 51, 51, 0.8)); */
@@ -75,6 +75,10 @@ header {
     left: 42%;
     display: none;
     gap: 35px;
+}
+
+.social-hamburger {
+    display: inline;
 }
 
 .social-icon {
@@ -137,7 +141,7 @@ img {
     height: auto;
     font-size: 32px;
     border-radius: 10%;
-    background-image: linear-gradient(rgb(51, 51, 51, 0.4), rgb(51, 51, 51, 0.8));
+    /* background-image: linear-gradient(rgb(51, 51, 51, 0.4), rgb(51, 51, 51, 0.8)); */
 
 }
 
@@ -225,6 +229,10 @@ footer {
 
 /*Gallery stuff*/
 
+.gallery-container {
+    margin-top: 100px;
+}
+
 .image-gallery {
     margin-left: 3vw;
     margin-right: 3vw;
@@ -260,6 +268,10 @@ footer {
         width: 500px;
         font-size: 64px;
         
+    }
+
+    .social-hamburger {
+        display: none;
     }
 
     /* Projects */
@@ -392,6 +404,15 @@ footer {
         align-items: center;
         justify-content: center;
         margin-top: 20vh;
+        
+    }
+
+    .submit-button-div {
+        translate: 80px;
+    }
+
+    .more-input {
+        width: 300px;
     }
 
     #mission-paragraph {
@@ -406,6 +427,13 @@ footer {
 
     .partners-2:first-child {
         order: 1;
+    }
+
+    .partners-2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
 
     
