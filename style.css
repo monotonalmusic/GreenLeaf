@@ -22,6 +22,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+button {
+    cursor: pointer;
+}
+
+
+/*making intersection observer animations*/
 .hidden {
     opacity: 0;
     transition: all 1s;
@@ -382,7 +388,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 800px) {
     h1 {
         font-size: 64px;
     }
