@@ -289,17 +289,18 @@ footer {
 
 .contact-container {
     margin-top: 10vh;
-    margin-left: 100px;
+    /* margin-left: 250px; */
+    width: 80%;
     height: 40vh;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px);
     gap: 50px;
 }
 
 .contact-item {
     color: black;
-    width: 300px;
+    width: 250px;
     display: flex;
     gap: 30px;
     flex-flow: column;
@@ -326,7 +327,7 @@ footer {
 }
 
 .contact-input {
-    width: 300px;
+    width: 175px;
     outline: 0;
     border-width: 0 0 2px;
     border-color: black;
@@ -461,7 +462,6 @@ footer {
 @media only screen and (max-width: 1100px) {
     /*contact stuff*/
     .contact-container {
-        margin-left: 3vh;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -472,7 +472,7 @@ footer {
     }
 
     .submit-button-div {
-        transform: translate(75px, 50px) ;
+        transform: translate(30px) ;
     }
 
     .more-input {
